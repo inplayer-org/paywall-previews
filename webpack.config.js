@@ -4,6 +4,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const pkg = require("./package.json");
 
 module.exports = {
+  target: "web",
   entry: path.resolve(__dirname, "./src"),
   mode: "production",
   optimization: {
@@ -12,15 +13,25 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "build"),
-    filename: "paywall-previews.min.js",
+    filename: "index.js",
     library: pkg.name,
-    libraryTarget: "commonjs2",
+    libraryTarget: "umd",
     publicPath: "/",
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: "this"
   },
   module: {
     rules: [
-      { test: /\.(js|ts)x?$/, loader: "babel-loader", exclude: /node_modules/ },
+      {
+        test: /\.(js|ts)x?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        }
+      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ["file-loader"]
