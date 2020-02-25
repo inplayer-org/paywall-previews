@@ -1,10 +1,14 @@
 {
   "name": "@inplayer-org/paywall-previews",
   "sideEffects": false,
-  "version": "0.0.0-beta.1",
+  "version": "0.0.1",
   "description": "Paywall Preview Templates",
-  "main": "build/index.js",
-  "module": "build/index.js",
+  "main": "build/paywall-previews.min.js",
+  "module": "build/paywall-previews.min.js",
+  "files": [
+    "src",
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inplayer-org/paywall-previews.git"
