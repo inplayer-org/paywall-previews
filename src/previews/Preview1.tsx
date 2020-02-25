@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { Colors, Grid } from '@inplayer-org/inplayer-ui';
+import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -43,6 +44,7 @@ interface Props {
   defaultAssePreviewDetails?: boolean;
   height?: string;
   width?: string;
+  theme?: any;
 }
 
 const Preview1: FunctionComponent<Props> = ({
@@ -54,7 +56,7 @@ const Preview1: FunctionComponent<Props> = ({
     preview_top_border: previewTopBorder = true,
     inplayer_protected_label: protectedLabel = true,
     preview_buttons_bg_color: buttonBgColor = Colors.green,
-    preview_buttons_text_color: buttonTextColor = Colors.white,
+    preview_buttons_text_color: buttonTextColor = Colors.red,
   } = {},
   assetCountrySetId,
   assetDomainRestrictions = [],
@@ -62,9 +64,12 @@ const Preview1: FunctionComponent<Props> = ({
   previewNotAvailable,
   width,
   height,
+  theme
 }: Props) => {
   const isRestrictedAsset = assetCountrySetId || assetDomainRestrictions.length !== 0;
   const assetPreviewImage = isRestrictedAsset ? restrictedAssetImg : imageUrl || previewImg;
+
+  console.error(theme);
 
   return (
     <StyledPreviewBox minWidth="520px" width={width} height={height} topBorder={previewTopBorder}>
@@ -108,4 +113,4 @@ const Preview1: FunctionComponent<Props> = ({
   );
 };
 
-export default Preview1;
+export default withTheme(Preview1);

@@ -42,7 +42,7 @@ export const StyledPaywallExplain = styled(PaywallExplain)<PaywallExplainProps>`
 `;
 
 export const Protected = styled.strong`
-  font-size: ${({ theme }) => theme.font.sizes.extraSmall};
+  font-size: ${({ theme }) => theme.font.sizes.large};
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   color: ${Colors.fontLightGray};
@@ -55,12 +55,11 @@ export const PaywallExplainSpan = styled(ExplainSpan)`
   width: 100%;
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h1`
   overflow-wrap: break-word;
-  font-weight: ${({ theme }) => theme.font.weights.normal};
-  font-size: ${({ theme }) => theme.font.sizes.medium};
+  font-weight: bold;
   line-height: 1.3em;
-  color: ${Colors.black};
+  color: yellow;
   margin: 0px;
 `;
 

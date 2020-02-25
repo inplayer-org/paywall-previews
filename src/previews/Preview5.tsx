@@ -1,6 +1,7 @@
 import React from 'react';
 import { Colors } from '@inplayer-org/inplayer-ui';
 import { lighten } from 'polished';
+import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -29,6 +30,7 @@ interface OwnProps {
   branding?: Branding;
   width?: string;
   height?: string;
+  theme?: any;
 }
 
 const Preview5 = ({
@@ -72,4 +74,4 @@ const Preview5 = ({
   );
 };
 
-export default React.memo(Preview5);
+export default withTheme(Preview5);

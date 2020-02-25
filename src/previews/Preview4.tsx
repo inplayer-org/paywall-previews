@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Colors, InPlayerIcon } from '@inplayer-org/inplayer-ui';
 import { transparentize } from 'polished';
+import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -33,6 +34,7 @@ interface Props {
   isFullPreview?: boolean;
   width?: string;
   height?: string;
+  theme?: any;
 }
 
 const removeTags = (str: string) =>
@@ -117,4 +119,4 @@ const Preview4: FunctionComponent<Props> = ({
   );
 };
 
-export default Preview4;
+export default withTheme(Preview4);
