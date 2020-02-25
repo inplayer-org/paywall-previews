@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, "build"),
-    filename: "index.js",
+    filename: "paywall-previews.min.js",
     library: pkg.name,
     libraryTarget: "umd",
     publicPath: "/",
