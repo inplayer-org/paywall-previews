@@ -1,7 +1,7 @@
 {
   "name": "@inplayer-org/paywall-previews",
   "sideEffects": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Paywall Preview Templates",
   "main": "dist/paywall-previews.min.js",
   "module": "dist/paywall-previews.min.js",
@@ -28,8 +28,9 @@
   "homepage": "https://github.com/inplayer-org/paywall-previews#readme",
   "scripts": {
     "prebuild": "rimraf ./build",
-    "build": "webpack --mode production",
-    "postbuild": "tsc -p declaration.tsconfig.json"
+    "build": "cross-env NODE_ENV=production webpack",
+    "postbuild": "tsc -p declaration.tsconfig.json",
+    "start": "cross-env NODE_ENV=development webpack-dev-server"
   },
   "dependencies": {
     "@inplayer-org/inplayer-ui": "^2.0.0-beta.25",
@@ -60,6 +61,7 @@
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.1.0",
+    "html-webpack-plugin": "^3.2.0",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -68,6 +70,7 @@
     "styled-components": "^5.0.1",
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
