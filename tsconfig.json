@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "target": "esnext",
     "module": "esnext",
     "jsx": "react",
@@ -11,6 +12,11 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "paths": {
       "assets": ["src/assets/*"],
       "components": ["src/components/*"],
