@@ -3,11 +3,12 @@
   "sideEffects": false,
   "version": "0.0.1",
   "description": "Paywall Preview Templates",
-  "main": "build/paywall-previews.min.js",
-  "module": "build/paywall-previews.min.js",
+  "main": "dist/paywall-previews.min.js",
+  "module": "dist/paywall-previews.min.js",
+  "types": "dist/index.d.ts",
   "files": [
     "src",
-    "build"
+    "dist"
   ],
   "repository": {
     "type": "git",
@@ -27,7 +28,19 @@
   "homepage": "https://github.com/inplayer-org/paywall-previews#readme",
   "scripts": {
     "prebuild": "rimraf ./build",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "postbuild": "tsc -p declaration.tsconfig.json"
+  },
+  "dependencies": {
+    "styled-components-modifiers": "^1.2.5",
+    "styled-tools": "^1.7.1",
+    "lodash": "^4.17.15",
+    "polished": "^3.4.4"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -35,7 +48,6 @@
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
-    "@inplayer-org/inplayer-ui": "^1.1.0",
     "@types/lodash": "^4.14.149",
     "@types/react": "^16.9.22",
     "@types/styled-components": "^5.0.0",
@@ -47,15 +59,11 @@
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.1.0",
-    "lodash": "^4.17.15",
-    "polished": "^3.4.4",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-quill": "^1.3.3",
     "rimraf": "^3.0.2",
-    "styled-components": "^5.0.1",
-    "styled-tools": "^1.7.1",
     "typescript": "^3.8.2",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"

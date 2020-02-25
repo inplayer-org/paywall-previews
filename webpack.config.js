@@ -12,7 +12,7 @@ module.exports = {
     minimizer: [new TerserPlugin()]
   },
   output: {
-    path: path.join(__dirname, "build"),
+    path: path.join(__dirname, "dist"),
     filename: "paywall-previews.min.js",
     library: pkg.name,
     libraryTarget: "umd",
