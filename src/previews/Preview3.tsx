@@ -8,7 +8,7 @@ import previewImg from 'assets/ip-preview-premium.png';
 import { Branding } from './types';
 
 // Components
-import TextEditor from 'components/TextEditor';
+import TextEditor from '../components/TextEditor';
 import { PaywallExplain } from './styledComponents/SharedComponents';
 import {
     StyledPreviewBox,

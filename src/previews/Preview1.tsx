@@ -10,8 +10,8 @@ import logo from 'assets/ip-icon-blue.svg';
 import { Branding } from './types';
 
 // Components
-import StyledContainer from 'components/StyledContainer';
-import TextEditor from 'components/TextEditor';
+import StyledContainer from '../components/StyledContainer';
+import TextEditor from '../components/TextEditor';
 import {
   OverlayLabel,
   PreviewImage,

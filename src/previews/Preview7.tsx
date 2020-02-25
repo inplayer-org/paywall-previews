@@ -10,7 +10,7 @@ import { Branding } from './types';
 
 // Components
 import { PreviewImage, OverlayLabel } from './styledComponents/SharedComponents';
-import TextEditor from 'components/TextEditor';
+import TextEditor from '../components/TextEditor';
 import {
   StyledPreviewBox,
   StyledImageWrapper,

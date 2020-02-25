@@ -10,8 +10,8 @@ import restrictedAssetImg from 'assets/restricted-asset.png';
 import { Branding } from './types';
 
 // Components
-import StyledContainer from 'components/StyledContainer';
-import TextEditor from 'components/TextEditor';
+import StyledContainer from '../components/StyledContainer';
+import TextEditor from '../components/TextEditor';
 import { OverlayLabel, PreviewImage } from './styledComponents/SharedComponents';
 import {
   StyledPreviewBox,
