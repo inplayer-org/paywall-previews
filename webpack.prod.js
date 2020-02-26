@@ -17,7 +17,7 @@ module.exports = {
     library: pkg.name,
     libraryTarget: "commonjs2",
     publicPath: "/",
-    umdNamedDefine: true,
+    umdNamedDefine: true
   },
   module: {
     rules: [
@@ -32,8 +32,16 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        test: /\.(jpe?g|png|gif|ico|svg)$/i,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
       },
       {
         test: /\.(css)$/,
@@ -69,6 +77,11 @@ module.exports = {
       commonjs2: "react-dom",
       commonjs: "react-dom",
       amd: "react-dom"
+    },
+    "styled-components": {
+      commonjs: "styled-components",
+      commonjs2: "styled-components",
+      amd: "styled-components"
     }
   }
 };
