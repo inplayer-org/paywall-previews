@@ -10,7 +10,7 @@ import restrictedAssetImg from 'assets/restricted-asset.png';
 import { Branding } from '../types';
 
 // Components
-import { PreviewImage, OverlayLabel } from '../styledComponents/SharedComponents';
+import { PreviewImage, OverlayLabel } from '../../components/SharedComponents';
 import TextEditor from '../../components/TextEditor';
 import {
   StyledPreviewBox,
