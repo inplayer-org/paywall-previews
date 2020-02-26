@@ -69,8 +69,6 @@ const Preview1: FunctionComponent<Props> = ({
   const isRestrictedAsset = assetCountrySetId || assetDomainRestrictions.length !== 0;
   const assetPreviewImage = isRestrictedAsset ? restrictedAssetImg : imageUrl || previewImg;
 
-  console.error(theme);
-
   return (
     <StyledPreviewBox minWidth="520px" width={width} height={height} topBorder={previewTopBorder}>
       {previewNotAvailable && <OverlayLabel variant="h5">Preview not available yet</OverlayLabel>}
