@@ -1,7 +1,7 @@
 {
   "name": "@inplayer-org/paywall-previews",
   "sideEffects": false,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Paywall Preview Templates",
   "main": "dist/paywall-previews.min.js",
   "module": "dist/paywall-previews.min.js",
