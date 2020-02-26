@@ -15,7 +15,7 @@ module.exports = {
     path: path.join(__dirname, "dist"),
     filename: "paywall-previews.min.js",
     library: pkg.name,
-    libraryTarget: "commonjs2",
+    libraryTarget: "umd",
     publicPath: "/",
     umdNamedDefine: true
   },
@@ -48,7 +48,7 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "url-loader",
+            loader: "url-loader"
           }
         ]
       }
@@ -78,7 +78,7 @@ module.exports = {
     "styled-components": {
       commonjs: "styled-components",
       commonjs2: "styled-components",
-      amd: "styled-components"
+      amd: "styled-components",
     }
   }
 };
