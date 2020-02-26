@@ -8,12 +8,12 @@ import previewImg from 'assets/ip-preview-premium.png';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 
 // Types
-import { Branding } from './types';
+import { Branding } from '../types';
 
 // Components
-import StyledContainer from '../components/StyledContainer';
-import TextEditor from '../components/TextEditor';
-import { OverlayLabel, PreviewImage } from './styledComponents/SharedComponents';
+import StyledContainer from '../../components/StyledContainer';
+import TextEditor from '../../components/TextEditor';
+import { OverlayLabel, PreviewImage } from '../styledComponents/SharedComponents';
 import {
   StyledPreviewBox,
   ImageWrapper,
@@ -22,7 +22,7 @@ import {
   StyledTextWrapper,
   StyledIconWrapper,
   Icon,
-} from './styledComponents/Preview4';
+} from './styled';
 
 interface Props {
   branding?: Branding;

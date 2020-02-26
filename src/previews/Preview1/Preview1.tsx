@@ -3,23 +3,23 @@ import { Colors, Grid } from '@inplayer-org/inplayer-ui';
 import { withTheme } from "styled-components";
 
 // Images
-import previewImg from 'assets/ip-preview-premium.png';
+import previewImg from 'assets/ip-preview-premium.jpg';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 import logo from 'assets/ip-icon-blue.svg';
 
 // Types
-import { Branding } from './types';
+import { Branding } from '../types';
 
 // Components
-import StyledContainer from '../components/StyledContainer';
-import TextEditor from '../components/TextEditor';
+import StyledContainer from '../../components/StyledContainer';
+import TextEditor from '../../components/TextEditor';
 import {
   OverlayLabel,
   PreviewImage,
   ImageHolder,
   TemplatesButton,
   FooterLink,
-} from './styledComponents/SharedComponents';
+} from '../styledComponents/SharedComponents';
 import {
   StyledCell,
   StyledPreviewBox,
@@ -31,7 +31,7 @@ import {
   LockIcon,
   StyledPreviewFooter,
   PremiumContent,
-} from './styledComponents/Preview1';
+} from './styled';
 
 const { Cell } = Grid;
 

@@ -8,14 +8,14 @@ import {
     ExplainSpan,
     ImageHolder,
     TemplatesButton,
-} from './SharedComponents';
+} from '../styledComponents/SharedComponents';
 
 
 interface PreviewBoxProps {
     width?: string;
     height?: string;
 }
-  
+
 export const StyledPreviewBox = styled(PreviewBox)<PreviewBoxProps>`
     box-sizing: border-box;
     height: ${({ height }) => height ?? '60vh'};

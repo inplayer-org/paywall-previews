@@ -6,11 +6,11 @@ import { withTheme } from "styled-components";
 import previewImg from 'assets/ip-preview-premium.png';
 
 // Types
-import { Branding } from './types';
+import { Branding } from '../types';
 
 // Components
-import TextEditor from '../components/TextEditor';
-import { PaywallExplain } from './styledComponents/SharedComponents';
+import TextEditor from '../../components/TextEditor';
+import { PaywallExplain } from '../styledComponents/SharedComponents';
 import {
     StyledPreviewBox,
     TitleWrapper,
@@ -20,7 +20,7 @@ import {
     Header,
     StyledIcon,
     TitleBorder
-} from './styledComponents/Preview3';
+} from './styled';
 
 interface OwnProps {
   branding?: Branding;

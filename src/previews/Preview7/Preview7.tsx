@@ -7,11 +7,11 @@ import previewImg from 'assets/ip-preview-premium.png';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 
 // Types
-import { Branding } from './types';
+import { Branding } from '../types';
 
 // Components
-import { PreviewImage, OverlayLabel } from './styledComponents/SharedComponents';
-import TextEditor from '../components/TextEditor';
+import { PreviewImage, OverlayLabel } from '../styledComponents/SharedComponents';
+import TextEditor from '../../components/TextEditor';
 import {
   StyledPreviewBox,
   StyledImageWrapper,
@@ -22,7 +22,7 @@ import {
   ButtonWrapper,
   BuyButton,
   StyledPreviewFooter,
-} from './Preview7/styled';
+} from './Preview7';
 
 interface Props {
   branding?: Branding;

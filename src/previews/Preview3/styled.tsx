@@ -10,7 +10,7 @@ import {
     ExplainSpan,
     ImageHolder,
     TextWrapper,
-} from './SharedComponents';
+} from '../styledComponents/SharedComponents';
 
 export const StyledPreviewBox = styled(PreviewBox)`
   height: ${({ height }) => height ?? '350px'};
@@ -73,7 +73,7 @@ export const Header = styled(PreviewFooter)`
 `;
 
 
-  
+
 interface TextColorProps {
     color: string;
 }

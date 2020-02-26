@@ -6,10 +6,10 @@ import { withTheme } from "styled-components";
 import previewImg from 'assets/ip-preview-premium.png';
 
 // Types
-import { Branding } from './types';
+import { Branding } from '../types';
 
 // Components
-import TextEditor from '../components/TextEditor';
+import TextEditor from '../../components/TextEditor';
 import {
   StyledPreviewBox,
   ImageWrapper,
@@ -21,7 +21,7 @@ import {
   FooterLink,
   IconHolder,
   Icon,
-} from './styledComponents/Preview6';
+} from './styled';
 
 interface Props {
   branding?: Branding;

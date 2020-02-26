@@ -10,18 +10,18 @@ import {
     TemplatesButton,
     TextWrapper,
     IconWrapper,
-} from './SharedComponents';
+} from '../styledComponents/SharedComponents';
 
 interface FullPreviewProps {
     isFullPreview?: boolean;
 }
-  
+
 interface PreviewBoxProps extends FullPreviewProps {
     topBorderColor?: string;
     width?: string;
     height?: string;
 }
-  
+
 export const StyledPreviewBox = styled(PreviewBox)<PreviewBoxProps>`
     height: ${({ height }) => height ?? '360px'};
     background: ${Colors.white};

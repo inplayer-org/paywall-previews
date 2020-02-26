@@ -6,13 +6,13 @@ import {
     PreviewBox,
     TemplatesButton,
     ImageHolder,
-} from './SharedComponents';
+} from '../styledComponents/SharedComponents';
 
 interface PreviewBoxProps {
     width?: string;
     height?: string;
 }
-  
+
 export const StyledPreviewBox = styled(PreviewBox)<PreviewBoxProps>`
     width: ${({ width }) => width ?? '580px'};
     height: ${({ height }) => height ?? '250px'};

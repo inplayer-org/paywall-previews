@@ -9,7 +9,7 @@ import {
     TemplatesButton,
     PreviewFooter,
     ExplainSpan,
-} from './SharedComponents';
+} from '../styledComponents/SharedComponents';
 
 export const StyledPreviewBox = styled(PreviewBox)`
   font-size: ${({ theme }) => theme.font.sizes.large};
@@ -23,7 +23,7 @@ interface ImageProps {
     backgroundImage: string;
     descriptionLength: number;
 }
-  
+
 interface ShowInPreviewProps {
     showInPreview: boolean;
 }
