@@ -74,4 +74,4 @@ const Preview5 = ({
   );
 };
 
-export default withTheme(Preview5);
+export default Preview5;

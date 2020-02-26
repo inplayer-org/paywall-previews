@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Colors, Grid } from '@inplayer-org/inplayer-ui';
-import { withTheme } from "styled-components";
+import { Colors, Grid, Typography } from "@inplayer-org/inplayer-ui";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -70,11 +69,21 @@ const Preview1: FunctionComponent<Props> = ({
   const assetPreviewImage = isRestrictedAsset ? restrictedAssetImg : imageUrl || previewImg;
 
   return (
-    <StyledPreviewBox minWidth="520px" width={width} height={height} topBorder={previewTopBorder}>
-      {previewNotAvailable && <OverlayLabel variant="h5">Preview not available yet</OverlayLabel>}
+    <StyledPreviewBox
+      minWidth="520px"
+      width={width}
+      height={height}
+      topBorder={previewTopBorder}
+    >
+      {previewNotAvailable && (
+        <OverlayLabel variant="h5">Preview not available yet</OverlayLabel>
+      )}
       <ImageHolder>
         <PreviewImage src={assetPreviewImage} />
-        <StyledPaywallExplain displayProtectedLabel={protectedLabel} color={Colors.white}>
+        <StyledPaywallExplain
+          displayProtectedLabel={protectedLabel}
+          color={Colors.white}
+        >
           <PremiumContent>
             <LockIcon name="lock" />
             <PaywallExplainSpan>
@@ -83,7 +92,11 @@ const Preview1: FunctionComponent<Props> = ({
           </PremiumContent>
           <div>
             <Protected>Protected by InPlayer</Protected>
-            <a href="https://inplayer.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://inplayer.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Logo src={logo} alt="logo" />
             </a>
           </div>
@@ -94,21 +107,30 @@ const Preview1: FunctionComponent<Props> = ({
           <Title>
             <TextEditor value={previewTitle} displayToolbar={false} readOnly />
           </Title>
-          <TextEditor value={previewDescription} displayToolbar={false} readOnly />
+          <TextEditor
+            value={previewDescription}
+            displayToolbar={false}
+            readOnly
+          />
         </StyledCell>
         {displayBuyButton && (
           <Cell middle>
-            <TemplatesButton buttonBgColor={buttonBgColor} buttonTextColor={buttonTextColor}>
-              <p>{previewButtonLabel}</p>
+            <TemplatesButton
+              buttonBgColor={buttonBgColor}
+              buttonTextColor={buttonTextColor}
+            >
+              <Typography variant="p">{previewButtonLabel}</Typography>
             </TemplatesButton>
           </Cell>
         )}
       </StyledContainer>
       <StyledPreviewFooter color={Colors.fontGray}>
-        <FooterLink>Already have access? Login with your InPlayer account</FooterLink>
+        <FooterLink>
+          Already have access? Login with your InPlayer account
+        </FooterLink>
       </StyledPreviewFooter>
     </StyledPreviewBox>
   );
 };
 
-export default withTheme(Preview1);
+export default Preview1;

@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { Colors, InPlayerIcon } from '@inplayer-org/inplayer-ui';
-import { withTheme } from "styled-components";
+import { Colors, InPlayerIcon, Typography } from "@inplayer-org/inplayer-ui";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -65,33 +64,57 @@ const Preview7: FunctionComponent<Props> = ({
       width={width}
       height={height}
     >
-      {previewNotAvailable && <OverlayLabel variant="h5">Preview not available yet</OverlayLabel>}
+      {previewNotAvailable && (
+        <OverlayLabel variant="h5">Preview not available yet</OverlayLabel>
+      )}
       <StyledImageWrapper>
-        <PreviewImage src={assetPreviewImage} imageWidth="250px" imageBorderRadius />
-        <StyledIconWrapper backgroundColor={buttonBgColor} protectedLabel={protectedLabel}>
+        <PreviewImage
+          src={assetPreviewImage}
+          imageWidth="250px"
+          imageBorderRadius
+        />
+        <StyledIconWrapper
+          backgroundColor={buttonBgColor}
+          protectedLabel={protectedLabel}
+        >
           <InPlayerIcon name="lock" />
         </StyledIconWrapper>
       </StyledImageWrapper>
       <ItemDetails>
         <PreviewHeader>
-          <TextEditor value={previewTitle} displayToolbar={false} isTextCenter readOnly />
+          <TextEditor
+            value={previewTitle}
+            displayToolbar={false}
+            isTextCenter
+            readOnly
+          />
         </PreviewHeader>
         <ItemContent>
-          <TextEditor value={previewDescription} displayToolbar={false} isTextCenter readOnly />
+          <TextEditor
+            value={previewDescription}
+            displayToolbar={false}
+            isTextCenter
+            readOnly
+          />
         </ItemContent>
       </ItemDetails>
       {displayBuyButton && (
         <ButtonWrapper>
-          <BuyButton buttonBgColor={buttonBgColor} buttonTextColor={buttonTextColor}>
+          <BuyButton
+            buttonBgColor={buttonBgColor}
+            buttonTextColor={buttonTextColor}
+          >
             {previewButtonLabel}
           </BuyButton>
         </ButtonWrapper>
       )}
       <StyledPreviewFooter color={Colors.fontGray}>
-        <p>Already have access? Login here with your account.</p>
+        <Typography variant="p">
+          Already have access? Login here with your account.
+        </Typography>
       </StyledPreviewFooter>
     </StyledPreviewBox>
   );
 };
 
-export default withTheme(Preview7);
+export default Preview7;
