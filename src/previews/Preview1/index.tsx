@@ -1,6 +1,5 @@
 import React, { FunctionComponent } from 'react';
 import { Colors, Grid } from '@inplayer-org/inplayer-ui';
-import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -111,4 +110,4 @@ const Preview1: FunctionComponent<Props> = ({
   );
 };
 
-export default withTheme(Preview1);
+export default Preview1;

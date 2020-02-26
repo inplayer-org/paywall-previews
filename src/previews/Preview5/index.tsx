@@ -1,7 +1,6 @@
 import React from 'react';
 import { Colors } from '@inplayer-org/inplayer-ui';
 import { lighten } from 'polished';
-import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -74,4 +73,4 @@ const Preview5 = ({
   );
 };
 
-export default withTheme(Preview5);
+export default Preview5;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { InPlayerIcon, Colors } from '@inplayer-org/inplayer-ui';
-import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -64,4 +63,4 @@ const Preview3 = ({
   );
 };
 
-export default withTheme(Preview3);
+export default Preview3;

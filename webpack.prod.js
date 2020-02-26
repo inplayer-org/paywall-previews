@@ -32,15 +32,6 @@ module.exports = {
         }
       },
       {
-        test: /\.(jpe?g|png|gif|ico|svg)$/i,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: "url-loader",
-          }
-        ]
-      },
-      {
         test: /\.(css)$/,
         include: [/stylesheets/, /node_modules/],
         use: ["css-loader"]
@@ -50,6 +41,15 @@ module.exports = {
         exclude: [/stylesheets/, /node_modules/],
         use: [
           "css-loader?sourceMap&modules,localIdentName=[local]-[hash:base64]"
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|ico|svg)$/i,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: "url-loader",
+          }
         ]
       }
     ]

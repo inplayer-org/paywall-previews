@@ -1,6 +1,5 @@
 import React from 'react';
 import { Colors } from '@inplayer-org/inplayer-ui';
-import { withTheme } from "styled-components";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
@@ -64,4 +63,4 @@ const Preview6 = ({
   </StyledPreviewBox>
 );
 
-export default withTheme(Preview6);
+export default Preview6;
