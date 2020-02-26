@@ -1,5 +1,5 @@
 import React from 'react';
-import { Colors } from '@inplayer-org/inplayer-ui';
+import { Colors, Typography } from "@inplayer-org/inplayer-ui";
 
 // Images
 import previewImg from 'assets/ip-preview-premium.png';
