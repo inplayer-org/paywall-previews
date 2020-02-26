@@ -4,7 +4,7 @@ import { lighten } from 'polished';
 import { withTheme } from "styled-components";
 
 // Images
-import previewImg from 'assets/ip-preview-premium.png';
+import previewImg from 'assets/ip-preview-premium.jpg';
 
 // Types
 import { Branding } from '../../types/branding';

@@ -3,7 +3,7 @@ import { InPlayerIcon, Colors } from '@inplayer-org/inplayer-ui';
 import { withTheme } from "styled-components";
 
 // Images
-import previewImg from 'assets/ip-preview-premium.png';
+import previewImg from 'assets/ip-preview-premium.jpg';
 
 // Types
 import { Branding } from '../../types/branding';

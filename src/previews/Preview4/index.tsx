@@ -4,7 +4,7 @@ import { transparentize } from 'polished';
 import { withTheme } from "styled-components";
 
 // Images
-import previewImg from 'assets/ip-preview-premium.png';
+import previewImg from 'assets/ip-preview-premium.jpg';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 
 // Types
