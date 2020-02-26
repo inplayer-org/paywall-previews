@@ -6,7 +6,7 @@ import {
     PreviewBox,
     TemplatesButton,
     ImageHolder,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 interface PreviewBoxProps {
     width?: string;

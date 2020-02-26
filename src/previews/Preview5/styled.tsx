@@ -8,7 +8,7 @@ import {
     ExplainSpan,
     ImageHolder,
     TemplatesButton,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 
 interface PreviewBoxProps {

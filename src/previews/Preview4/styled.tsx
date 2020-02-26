@@ -10,7 +10,7 @@ import {
     TemplatesButton,
     TextWrapper,
     IconWrapper,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 interface FullPreviewProps {
     isFullPreview?: boolean;

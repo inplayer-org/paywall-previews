@@ -10,7 +10,7 @@ import {
     ExplainSpan,
     ImageHolder,
     TextWrapper,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 export const StyledPreviewBox = styled(PreviewBox)`
   height: ${({ height }) => height ?? '350px'};

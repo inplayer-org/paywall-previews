@@ -7,7 +7,7 @@ import previewImg from 'assets/ip-preview-premium.png';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 
 // Types
-import { Branding } from '../types';
+import { Branding } from '../../types/branding';
 
 // Components
 import { PreviewImage, OverlayLabel } from '../../components/SharedComponents';

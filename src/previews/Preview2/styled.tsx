@@ -9,7 +9,7 @@ import {
     TemplatesButton,
     PreviewFooter,
     ExplainSpan,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 export const StyledPreviewBox = styled(PreviewBox)`
   font-size: ${({ theme }) => theme.font.sizes.large};

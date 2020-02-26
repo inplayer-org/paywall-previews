@@ -8,7 +8,7 @@ import restrictedAssetImg from 'assets/restricted-asset.png';
 import logo from 'assets/ip-icon-blue.svg';
 
 // Types
-import { Branding } from '../types';
+import { Branding } from '../../types/branding';
 
 // Components
 import StyledContainer from '../../components/StyledContainer';
@@ -19,7 +19,7 @@ import {
   ImageHolder,
   TemplatesButton,
   FooterLink,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 import {
   StyledCell,
   StyledPreviewBox,

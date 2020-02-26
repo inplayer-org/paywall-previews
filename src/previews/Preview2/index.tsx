@@ -6,11 +6,11 @@ import { withTheme } from "styled-components";
 import previewImg from 'assets/ip-preview-premium.png';
 
 // Types
-import { Branding } from '../types';
+import { Branding } from '../../types/branding';
 
 // Components
 import TextEditor from '../../components/TextEditor';
-import { PaywallExplain, FooterLink } from '../styledComponents/SharedComponents';
+import { PaywallExplain, FooterLink } from '../../components/SharedComponents';
 import {
   StyledPreviewBox,
   StyledImageHolder,

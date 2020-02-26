@@ -8,12 +8,12 @@ import previewImg from 'assets/ip-preview-premium.png';
 import restrictedAssetImg from 'assets/restricted-asset.png';
 
 // Types
-import { Branding } from '../types';
+import { Branding } from '../../types/branding';
 
 // Components
 import StyledContainer from '../../components/StyledContainer';
 import TextEditor from '../../components/TextEditor';
-import { OverlayLabel, PreviewImage } from '../styledComponents/SharedComponents';
+import { OverlayLabel, PreviewImage } from '../../components/SharedComponents';
 import {
   StyledPreviewBox,
   ImageWrapper,

@@ -9,7 +9,7 @@ import {
     PreviewBox,
     PaywallExplain,
     ExplainSpan,
-} from '../styledComponents/SharedComponents';
+} from '../../components/SharedComponents';
 
 const { Cell } = Grid;
 
