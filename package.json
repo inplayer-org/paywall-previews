@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/inplayer-org/paywall-previews#readme",
   "scripts": {
-    "prebuild": "rimraf ./build",
+    "prebuild": "rimraf ./dist",
     "build": "cross-env NODE_ENV=production webpack",
     "postbuild": "tsc -p declaration.tsconfig.json",
     "start": "cross-env NODE_ENV=development webpack-dev-server"
