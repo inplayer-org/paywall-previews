@@ -22,7 +22,7 @@ import {
   ButtonWrapper,
   BuyButton,
   StyledPreviewFooter,
-} from './Preview7';
+} from './styled';
 
 interface Props {
   branding?: Branding;
